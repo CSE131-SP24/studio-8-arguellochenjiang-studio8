@@ -11,6 +11,18 @@ public class SelectAllQuestion extends MultipleChoiceQuestion {
 	public int checkAnswer(String givenAnswer) {
 		//FIXME Should return partial credit (if earned)
 		
+		int partialAnswerPoints = 4;
+		
+		String trueAnswer = this.getAnswer();
+		char[] charListTrueAnswer = trueAnswer.toCharArray();
+		char[] charListGivenAnswer = givenAnswer.toCharArray();
+		
+		for (int i = 0; i<charListTrueAnswer.length; i++) {
+			for (int a = 0; a<charListGivenAnswer.length; a++) {
+				
+			}
+		}
+		
 		
 		return 0;
 	}
